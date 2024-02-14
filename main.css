@@ -1,3 +1,22 @@
+@font-face {
+    font-family: 'kanitblack';
+    src: url('./fonts/kanit-black-webfont.woff2') format('woff2'),
+         url('./fonts/kanit-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+  
+  @font-face {
+    font-family: 'kanitlight';
+    src: url('./fonts/kanit-light-webfont.woff2') format('woff2'),
+         url('./fonts/kanit-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+
+
 /* Resetting default margin and padding */
 body,
 h1,
@@ -26,6 +45,7 @@ header {
   color: #fff;
   padding: 20px 0;
   text-align: center;
+  font-family: 'kanitlight';
 }
 
 /* Main content styles */
@@ -48,6 +68,7 @@ main {
   padding: 20px;
   display: flex; /* เพิ่มการใช้งาน Flexbox */
   flex-direction: column; /* จัดเรียงลักษณะของ Card เป็นคอลัมน์ */
+  font-family: 'kanitlight';
 }
 
 .movie:hover {
@@ -96,8 +117,9 @@ main {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.5s ease;
   margin-top: auto;
+  font-family: 'kanitlight';
 }
 
 .movie button:hover {

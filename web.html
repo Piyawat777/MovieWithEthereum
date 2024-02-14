@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Sell Web Page</title>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <title>BC Movie</title>
     <!-- <script src="./node_modules/web3/dist/web3.min.js">
     </script> -->
     <script src="https://cdn.jsdelivr.net/npm/web3@1.10.3/dist/web3.min.js"></script>
@@ -14,19 +15,21 @@
 <body>
     <header>
         <div class="container">
-            Header
+            <h1 style="text-align:center">Welcome to BC Movie </h1>
+            <h3 style="text-align:center">โปรดเลือกหนังที่ท่านต้องการ</h3>
         </div>
     </header>
 
     <main>
         <div class="container">
-            <h1>Welcome to MovieLand</h1>
+            <!-- <h1>Welcome to MovieLand</h1> -->
             <div class="movie-container">
                 <div class="movie">
                     <img src="movie1.jpg" alt="Movie 1">
                     <h2>The Fast and the Furious: Tokyo Drift</h2>
                     <span>2006 | Maturity Rating:13+ | 1h 44m | Crime</span>
                     <p>A teenager becomes a major competitor in the world of drift racing after moving in with his father in Tokyo to avoid a jail sentence in America.</p>
+                    <label style="text-align: center; font-size: large;">0.00005 ETH</label>
                     <button>Buy Now</button>
                 </div>
                 <div class="movie">
@@ -34,6 +37,7 @@
                     <h2>The Martian</h2>
                     <span>2015 | Maturity Rating:13+ | 2h 24m | Drama</span>
                     <p>An astronaut becomes stranded on Mars after his team assume him dead, and must rely on his ingenuity to find a way to signal to Earth that he is alive and can survive until a potential rescue.</p>
+                    <label style="text-align: center; font-size: large;">0.00005 ETH</label>
                     <button>Buy Now</button>
                 </div>
                 <div class="movie">
@@ -41,6 +45,7 @@
                     <h2>Iron Man 3</h2>
                     <span>2016 | Maturity Rating:13+ | 1h 26m | Drama</span>
                     <p>When Tony Stark's world is torn apart by a formidable terrorist called the Mandarin, he starts an odyssey of rebuilding and retribution.</p>
+                    <label style="text-align: center; font-size: large;">0.00005 ETH</label>
                     <button>Buy Now</button>
                 </div>
                 <div class="movie">
@@ -48,6 +53,7 @@
                     <h2>Mission: Impossible - Ghost Protocol</h2>
                     <span>2011 | Maturity Rating:13+ | 2h 12m | Action</span>
                     <p>The IMF is shut down when it's implicated in the bombing of the Kremlin, causing Ethan Hunt and his new team to go rogue to clear their organization's name.</p>
+                    <label style="text-align: center; font-size: large;">0.00005 ETH</label>
                     <button>Buy Now</button>
                 </div>
                 <div class="movie">
@@ -55,14 +61,15 @@
                     <h2>Casino Royale</h2>
                     <span>2006 | Maturity Rating:13+ | 2h 24m | Action</span>
                     <p>After earning 00 status and a licence to kill, secret agent James Bond sets out on his first mission as 007. Bond must defeat a private banker funding terrorists in a high-stakes game of poker at Casino Royale, Montenegro."</p>
+                    <label style="text-align: center; font-size: large;">0.00005 ETH</label>
                     <button>Buy Now</button>
                 </div>
                 <div class="movie">
                     <img src="movie6.jpg" alt="Movie 6">
                     <h2>Angel Has Fallen</h2>
                     <span>2019 | Maturity Rating:16+ | 2h 1m | Action</span>
-                    <p>Mike Banning is framed for the attempted assassination of the President and must evade his own agency and the FBI as he tries to uncover the real threat.
-                    </p>
+                    <p>Mike Banning is framed for the attempted assassination of the President and must evade his own agency and the FBI as he tries to uncover the real threat.</p>
+                    <label style="text-align: center; font-size: large;">0.00005 ETH</label>
                     <button >Buy Now</button>
                 </div>
             </div>
@@ -79,25 +86,46 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <th>10:13</th>
-                        <th>Split</th>
-                        <th>0xBDBD</th>
+                        <td id="time1"> </td>
+                        <td id="movie1"> </td>
+                        <td id="owner1"> </td>
                     </tr>
                 </tbody>
                 <tbody>
                     <tr>
-                        <th>10:22</th>
-                        <th>Parasite</th>
-                        <th>0xAAAA</th>
+                        <td id="time2"> </td>
+                        <td id="movie2"> </td>
+                        <td id="owner2"> </td>
                     </tr>
                 </tbody>
-                <!-- <tbody>
+                <tbody>
                     <tr>
-                        <th></th>
-                        <th></th>
-                        <th></th>
+                        <td id="time3"> </td>
+                        <td id="movie3"> </td>
+                        <td id="owner3"> </td>
                     </tr>
-                </tbody> -->
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td id="time4"> </td>
+                        <td id="movie4"> </td>
+                        <td id="owner4"> </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td id="time5"> </td>
+                        <td id="movie5"> </td>
+                        <td id="owner5"> </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td id="time6"> </td>
+                        <td id="movie6"> </td>
+                        <td id="owner6"> </td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     </main>
