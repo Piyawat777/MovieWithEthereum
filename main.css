@@ -1,119 +1,173 @@
 /* Resetting default margin and padding */
-body, h1, h2, p, button {
-    margin: 0;
-    padding: 0;
+body,
+h1,
+h2,
+p,
+button {
+  margin: 0;
+  padding: 0;
 }
 
 /* Setting up default font and background color */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
 }
 
 /* Container styles */
 .container {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
 /* Header styles */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
 }
 
 /* Main content styles */
 main {
-    padding: 20px 0;
+  padding: 20px 0;
 }
 
 .movie-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .movie {
-    width: calc(33.33% - 20px);
-    margin: 10px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex; /* เพิ่มการใช้งาน Flexbox */
+  flex-direction: column; /* จัดเรียงลักษณะของ Card เป็นคอลัมน์ */
+}
+
+.movie:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .movie img {
-    display: block;
-    margin: 0 auto;
-    width: 250px;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.movie-content {
+  flex-grow: 1; /* ทำให้เนื้อหาของ Card ขยายเต็มพื้นที่ */
 }
 
 .movie h2 {
-    margin-top: 10px;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.movie span {
+  margin-top: 5px;
+  color: #aaaaaa;
+  font-size: 0.9rem;
 }
 
 .movie p {
-    margin-top: 5px;
-    color: #666;
+  margin-top: 5px;
+  color: #666;
+  line-height: 1.4;
+  margin-bottom: 15px;
 }
-.movie span{
-    margin-top: 5px;
-    color: #aaaaaa;
-}
+
 .movie button {
-    display: block;
-    width: 100%;
-    margin-top: 15px;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: a;
 }
 
 .movie button:hover {
-    background-color: #555;
+  background-color: #555;
 }
 
 /* Footer styles */
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
 }
 
+/* Table styles */
 .table-container {
-    width: 50%;
-    margin: 0 auto; /* This centers the container horizontally */
+  width: 50%;
+  margin: 0 auto; /* This centers the container horizontally */
+  margin-top: 50px;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
-th, td {
-    border: 1px solid #dddddd;
-    padding: 8px;
-    text-align: left;
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
 }
 
-thead th {
-    background-color: #cbcbcb; /* Background color for header cells */
-} 
-
-tbody tr:nth-child(even) {
-    background-color: #eeeeee; /* Light gray background for even rows */
+th {
+  background-color: #f2f2f2;
 }
 
-tbody tr:nth-child(odd) {
-    background-color: #ffffff; /* White background for odd rows */
+/* Additional CSS for enhancing visual appearance */
+
+/* Hover effect for header */
+header:hover {
+  background-color: #555; /* Darken the header on hover */
+}
+
+/* Hover effect for movie cards */
+.movie:hover {
+  transform: translateY(-5px) scale(1.05); /* Scale up the movie card on hover */
+}
+
+/* Fancy button hover effect */
+.movie button:hover {
+  background-color: #4caf50; /* Green background on button hover */
+  color: white; /* White text color on button hover */
+}
+
+/* Footer styles */
+footer .container {
+  display: flex;
+  justify-content: space-between; /* Spread footer content evenly */
+  align-items: center; /* Center content vertically */
+}
+
+/* Footer link styles */
+footer a {
+  color: #fff; /* White text color */
+  text-decoration: none; /* Remove underline from links */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+footer a:hover {
+  color: #aaa; /* Dark gray color on link hover */
 }
