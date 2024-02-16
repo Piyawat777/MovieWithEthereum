@@ -60,9 +60,9 @@
             </p>
             <label
               style="text-align: center; font-size: large; margin-top: 22px"
-              >Price: 0.001 Ether</label
+              >Price: 0.0001 Ether</label
             >
-            <button id="btnRegistrationFast">Buy</button>
+            <button id="btnRegistration01">Buy</button>
           </div>
           <div class="movie">
             <img src="image/movie2.jpeg" alt="Movie 2" />
@@ -74,9 +74,9 @@
               Earth that he is alive and can survive until a potential rescue.
             </p>
             <label style="text-align: center; font-size: large"
-              >Price: 0.002 Ether</label
+              >Price: 0.0002 Ether</label
             >
-            <button id="btnRegistrationMartian">Buy</button>
+            <button id="btnRegistration02">Buy</button>
           </div>
           <div class="movie">
             <img src="image/movie3.jpg" alt="Movie 3" />
@@ -90,9 +90,9 @@
             <!-- <input id="document1" type="text"> -->
             <label
               style="text-align: center; font-size: large; margin-top: 22px"
-              >Price: 0.003 Ether</label
+              >Price: 0.0003 Ether</label
             >
-            <button id="btnRegistrationIron">Buy</button>
+            <button id="btnRegistration03">Buy</button>
           </div>
           <div class="movie">
             <img src="image/movie4.jpg" alt="Movie 4" />
@@ -106,9 +106,9 @@
             </p>
             <label
               style="text-align: center; font-size: large; margin-top: 23px"
-              >Price: 0.004 Ether</label
+              >Price: 0.0004 Ether</label
             >
-            <button id="btnRegistrationMission">Buy</button>
+            <button id="btnRegistration04">Buy</button>
           </div>
           <div class="movie">
             <img src="image/movie5.jpg" alt="Movie 5" />
@@ -118,13 +118,13 @@
               After earning 00 status and a licence to kill, secret agent James
               Bond sets out on his first mission as 007. Bond must defeat a
               private banker funding terrorists in a high-stakes game of poker
-              at Casino Royale, Montenegro."
+              at Casino Royale, Montenegro.
             </p>
             <!-- <input id="document1" type="text"> -->
             <label style="text-align: center; font-size: large"
-              >Price: 0.005 Ether</label
+              >Price: 0.0005 Ether</label
             >
-            <button id="btnRegistrationCasino">Buy</button>
+            <button id="btnRegistration05">Buy</button>
           </div>
           <div class="movie">
             <img src="image/movie6.jpg" alt="Movie 6" />
@@ -140,14 +140,14 @@
               style="text-align: center; font-size: large; margin-top: 23px"
               >Price: 0.006 Ether</label
             >
-            <button id="btnRegistrationAngel">Buy</button>
+            <button id="btnRegistration06">Buy</button>
           </div>
         </div>
       </div>
       <div class="table-container" style="margin-top: 50px; width: 70%">
         <!-- Mocking up some data -->
-        <h1>ตารางเวลา</h1>
-        <button id="btnCheck">Check the Owner</button>
+        <h1>Buying Table</h1>
+        <button id="btnCheck" class="checkbutton">Check the Owner</button>
       <table id="resultTable">
         <thead>
           <tr>
@@ -160,15 +160,8 @@
       </table>
       </div>
     </main>
-
     <footer>
-      <!-- <div class="container">
-        Status: <span id="status" style="color:green;">Loading...</span>
-        <span id="currentAccount"></span>
-      </div> -->
-      <h2 id="status" style="border-radius: 5px; color: rgb(6, 250, 46)">
-        Status...
-      </h2>
+      <h2 id="status" style="border-radius: 5px; color: rgb(6, 250, 46)">Status...</h2>
       <span id="currentAccount"></span>
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
@@ -212,7 +205,7 @@
           currentAccount = accounts[0];
           // Update the display of current account
           document.getElementById("currentAccount").innerHTML =
-            "Current Account: " + currentAccount;
+            "บัญชีที่กำลังใช้งาน: " + currentAccount;
         }
       }
 
@@ -332,7 +325,7 @@
       async function load() {
         await loadWeb3();
         web3.contract = await loadContract();
-        updateStatus("Ready!");
+        updateStatus("Ready !");
       }
       // Function to convert timestamp to human-readable date
       function convertTimestamp(timestamp) {
@@ -365,16 +358,16 @@
       $("#btnRegistration02").click(function () {
         handleBuy("The Martian!", "0.0002");
       });
-      $("#btnRegistration01").click(function () {
+      $("#btnRegistration03").click(function () {
         handleBuy("Iron Man 3!", "0.0003");
       });
-      $("#btnRegistration03").click(function () {
+      $("#btnRegistration04").click(function () {
         handleBuy("Mission: Impossible - Ghost Protocol!", "0.0004");
       });
-      $("#btnRegistration04").click(function () {
+      $("#btnRegistration05").click(function () {
         handleBuy("Casino Royale!", "0.0005");
       });
-      $("#btnRegistration05").click(function () {
+      $("#btnRegistration06").click(function () {
         handleBuy("Angel Has Fallen!", "0.0006");
       });
 

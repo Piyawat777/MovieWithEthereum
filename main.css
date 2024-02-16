@@ -181,3 +181,24 @@ footer a:hover {
 }
 
 /* Animatino */
+
+.checkbutton {
+  display: block;
+  width: 20%;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  margin-top: auto;
+  font-family: "kanitlight";
+  font-size: medium;
+}
+
+.checkbutton:hover {
+  background-color: #4caf50; /* Green background on button hover */
+  color: white; /* White text color on button hover */
+}
